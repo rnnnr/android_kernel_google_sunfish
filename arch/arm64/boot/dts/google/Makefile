@@ -45,6 +45,9 @@ sm8150-flame-evt-overlay.dtbo-base	:= qcom-base/sm8150-v2.dtb
 sm8150-flame-evt1_1-overlay.dtbo-base	:= qcom-base/sm8150-v2.dtb
 sm8150-flame-dvt-overlay.dtbo-base	:= qcom-base/sm8150-v2.dtb
 sm8150-flame-overlay.dtbo-base		:= qcom-base/sm8150-v2.dtb
+else
+dtb-$(CONFIG_BOARD_SUNFISH) += \
+	sm7150-sunfish-mp1.0.dtb
 endif
 
 always		:= $(dtb-y)
